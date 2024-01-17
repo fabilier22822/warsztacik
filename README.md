@@ -29,4 +29,4 @@ print(a**b)
 jakis tekst z `print("z kodem")`
 
 
-![ladne_zdjecie_z_wakacji.jpg](ladne_zdjecie_z_wakacji.jpg)
+![ladne_zdjęcia_z_wakacji.jpg](ladne_zdjęcia_z_wakacji.jpg)

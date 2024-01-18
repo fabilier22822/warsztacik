@@ -1,0 +1,26 @@
+# plik .github/workflows/testy.yml
+
+name: Testy Jednostkowe
+
+on: [push, pull_request]
+
+jobs:
+  testy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repozytorium
+      uses: actions/checkout@v2
+
+    - name: Ustawienie Pythona
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Instalacja Zależności
+      run: |
+        pip install -r requirements.txt
+
+    - name: Uruchomienie Testów
+      run: |
+        python -m unittest discover
